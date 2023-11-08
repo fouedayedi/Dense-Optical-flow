@@ -1,48 +1,45 @@
 # Dense-Optical-flow
-Ce repo contient l'utlisation de l’algorithme de Farnebäck. Cette méthode, qui repose sur une généralisation de l’approche
-de Lucas et Kanade, utilise l’expansion polynomiale pour modéliser le voisinage des pixels et ainsi
-estimer le mouvement de manière plus dense et plus précise. La capacité de l’algorithme de Farnebäck
-à fournir un vecteur de déplacement pour chaque pixel de l’image le rend particulièrement adapté aux
-scénarios où une haute résolution de mouvement est requise. Dans ce TP, en mettant en application la
-méthode de Farnebäck, nous ne nous contentons pas seulement de quantifier le mouvement, mais nous
-plongeons également dans la complexité de son estimation, ce qui nous permet de saisir les nuances et
-les défis techniques inhérents à l’analyse du mouvement dans les séquences vidéo.
+Ce dépôt contient l'implémentation de l'algorithme de Farnebäck pour l'estimation du mouvement optique dense. Cet algorithme, qui repose sur une généralisation de l'approche de Lucas et Kanade, utilise l'expansion polynomiale pour modéliser le voisinage des pixels et ainsi estimer le mouvement de manière plus dense et plus précise.
+Présentation
 
-## Project Structure
+L'estimation du mouvement optique est une tâche importante dans de nombreux domaines, tels que la vision par ordinateur, la robotique et la vidéosurveillance. Elle permet de déterminer la position des objets dans une scène au fil du temps.
 
-```plaintext
+L'algorithme de Farnebäck est un algorithme d'estimation du mouvement optique dense, c'est-à-dire qu'il fournit un vecteur de déplacement pour chaque pixel de l'image. Il est particulièrement adapté aux scénarios où une haute résolution de mouvement est requise.
+### Structure du projet
+
 .
-├── data                 # Directory containing the dataset
-├── model                
-│   └── classHOG.p       # Pre-trained model
-├── pickle              
-├── utile                # Utility functions and scripts
-│   ├── __init__.py     
-│   ├── functions.py     # Utility functions
-│   └── visuHOG.py       # Visualization for HOG
-├── .gitignore
-├── HOG_ATELIER1.py      # SVM training and results
-├── README.md
-├── main.py              # Main script to run the project
-└── requirements.txt     # List of dependencies
 ```
-## Dataset
+├── images                    # les images générées
+├── videos                    # les vidéos
+├── utils                     # les fonctions et scripts utilitaires
+│  ├── extract.py            # classe qui calcule la PSNR, la DFD et dessine les flux de deux images données une taille de fenêtre
+│  ├── myinfo_on_video.py    # infos sur la vidéo : hauteur, largeur, longueur de la séquence, fps
+│  └── myreadseq.py            # Visualisation de la séquence video
+├── .gitignore
+├── mydense_optical_flow.py  # ce fichier permet de générer les images HSV et les flux avec flèches sur les différents frames de la vidéo
+├── README.md
+├── main.py                   # ce fichier permet de générer le graphique de la variation de la PSNR en fonction de la taille de la fenêtre
+└── requirements.txt         # liste des dépendances
 
-The dataset used for this project is the les séquences vidéo à étudier de  https://media.xiph.org/video/derf/
+```
+### Données
 
-## Key Reference
+Le dataset utilisé pour ce projet est le dataset derf: https://media.xiph.org/video/derf/. Il s'agit d'une collection de vidéos de personnes en mouvement.
+### Références
 
-For those interested in diving deeper into the topic,
-Gunnar Farnebäck, « Two-frame motion estimation based on polynomial
-expansion », Proceedings of the 13th Scandinavian conference on Image analysis (SCIA'03),
-Josef Bigun and Tomas Gustavsson (Eds.). Springer-Verlag, Berlin, Heidelberg, 2003, p. 363-
-370
+    Gunnar Farnebäck, « Two-frame motion estimation based on polynomial expansion », Proceedings of the 13th Scandinavian conference on Image analysis (SCIA'03), Josef Bigun and Tomas Gustavsson (Eds.). Springer-Verlag, Berlin, Heidelberg, 2003, p. 363-370.
 
-## Setup and Installation
+### Installation
 
-1. Clone this repository:
-
-2. Install the required dependencies:
-
-4. Run the main script:
+Clonez ce dépôt :
+```
+git clone https://github.com//Dense-Optical-flow.git](https://github.com/fouedayedi/Dense-Optical-flow.git
+```
+Installez les dépendances requises :
+```
+pip install -r requirements.txt
+```
+Exécutez le script:
+```
 python main.py
+```
