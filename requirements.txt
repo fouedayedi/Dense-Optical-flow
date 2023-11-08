@@ -1,0 +1,25 @@
+contourpy==1.1.1
+cycler==0.12.1
+fonttools==4.43.1
+imagecodecs @ file:///home/conda/feedstock_root/build_artifacts/imagecodecs_1696191620709/work
+imageio @ file:///home/conda/feedstock_root/build_artifacts/imageio_1696854106455/work
+importlib-resources==6.1.0
+joblib @ file:///home/conda/feedstock_root/build_artifacts/joblib_1691577114857/work
+kiwisolver==1.4.5
+lazy_loader @ file:///home/conda/feedstock_root/build_artifacts/lazy_loader_1692295373316/work
+matplotlib==3.8.0
+networkx @ file:///home/conda/feedstock_root/build_artifacts/networkx_1698504735452/work
+numpy @ file:///home/conda/feedstock_root/build_artifacts/numpy_1695290879892/work/dist/numpy-1.26.0-cp39-cp39-linux_x86_64.whl#sha256=2145d30cdd6d3c9c4a4be216bb158edeac64e1c9aba388e733918d65b9481735
+opencv-python==4.8.1.78
+packaging @ file:///home/conda/feedstock_root/build_artifacts/packaging_1696202382185/work
+Pillow @ file:///home/conda/feedstock_root/build_artifacts/pillow_1697423630459/work
+pyparsing==3.1.1
+python-dateutil==2.8.2
+PyWavelets @ file:///home/conda/feedstock_root/build_artifacts/pywavelets_1695567547297/work
+scikit-image @ file:///home/conda/feedstock_root/build_artifacts/scikit-image_1697028619953/work/dist/scikit_image-0.22.0-cp39-cp39-linux_x86_64.whl#sha256=42ab2afa3a2d8d73124519138271187262fb4aadc71ac831171fb60dca648680
+scikit-learn @ file:///home/conda/feedstock_root/build_artifacts/scikit-learn_1698224874594/work
+scipy @ file:///home/conda/feedstock_root/build_artifacts/scipy-split_1696467636616/work/dist/scipy-1.11.3-cp39-cp39-linux_x86_64.whl#sha256=a6aac64ea98b312a6fc4eb9b64913750b470af13ea37187c2f28d685ab103fde
+six==1.16.0
+threadpoolctl @ file:///home/conda/feedstock_root/build_artifacts/threadpoolctl_1689261241048/work
+tifffile @ file:///home/conda/feedstock_root/build_artifacts/tifffile_1695815014864/work
+zipp==3.17.0
