@@ -1,4 +1,6 @@
 # Dense-Optical-flow
+![OpticalflowResults](https://github.com/fouedayedi/Kalman-filter-results-on-MOT15/blob/main/ETH-Sunnyday-results.gif)
+
 Ce dépôt contient l'implémentation de l'algorithme de Farnebäck pour l'estimation du mouvement optique dense. Cet algorithme, qui repose sur une généralisation de l'approche de Lucas et Kanade, utilise l'expansion polynomiale pour modéliser le voisinage des pixels et ainsi estimer le mouvement de manière plus dense et plus précise.
 Présentation
 
